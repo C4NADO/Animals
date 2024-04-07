@@ -5,7 +5,7 @@ local cleanupDelay = Config.cleanupDelay
 
 
 function SpawnPedAtLocation(model, pos, heading)
-    local pedModel = GetHashKey("A_C_Buffalo_Tatanka_01")
+    local pedModel = GetHashKey("a_c_buffalo_tatanka_01")
 
     Citizen.CreateThread(function()
         RequestModel(pedModel)
@@ -13,7 +13,7 @@ function SpawnPedAtLocation(model, pos, heading)
             Wait(500)
         end
 
-        local ped = CreatePed(0, pedModel, pos.x, pos.y, pos.z, heading, false, true)
+        local ped = CreatePed(pedModel, pos.x, pos.y, pos.z, heading, false, true)
         Config.AddSpawnedPed(ped)
 
         print("Ped spawned:", ped)
