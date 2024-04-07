@@ -10,6 +10,8 @@ function SpawnPed(model, pos, heading)
 
         local ped = CreatePed(1, pedModel, pos.x, pos.y, pos.z, heading, false, true)
         Config.AddSpawnedPed(ped)
+
+        print("Ped spawned:", ped)
     end)
 end
 

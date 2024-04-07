@@ -16,8 +16,10 @@ function SpawnPedAtLocation(model, pos, heading)
         local ped = CreatePed(0, pedModel, pos.x, pos.y, pos.z, heading, false, true)
         Config.AddSpawnedPed(ped)
 
+        print("Ped spawned:", ped)
+
         Citizen.InvokeNative(0x283978A15512B2FE, ped, true) -- SetRandomOutfitVariation
-        SetEntityVisible(0x1794B4FCC84D812F, true) -- visible
+        SetEntityVisible(ped, true) -- visible
 
     end)
 end
