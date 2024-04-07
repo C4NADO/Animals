@@ -1,4 +1,5 @@
 Config = {}
+spawnedPeds = {} 
 
 -- Default spawn position for peds
 Config.defaultSpawnPosition = vector3(-5258.53, -2484.13, -8.67)
