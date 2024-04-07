@@ -1,8 +1,6 @@
-require("config")
-
 -- Function to spawn a ped at a specific location
 function SpawnPed(model, pos, heading)
-    local pedModel = GetHashKey("a_c_buffalo_tatanka_01")
+    local pedModel = GetHashKey("A_C_Buffalo_Tatanka_01")
 
     Citizen.CreateThread(function()
         RequestModel(pedModel)
@@ -19,7 +17,7 @@ RegisterCommand("spawnped", function(source, args, rawCommand)
     local model = args[1]
     local x, y, z = tonumber(args[2]), tonumber(args[3]), tonumber(args[4])
     local heading = tonumber(args[5]) or 0.0
-    local pos = vector3(1006.76, 693.63, 111.27)
+    local pos = vector3(-5258.53, -2484.13, -8.67)
     
     SpawnPed(model, pos, heading)
 end)

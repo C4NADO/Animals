@@ -1,13 +1,13 @@
 Config = {}
 
 -- Default spawn position for peds
-Config.defaultSpawnPosition = vector3(1006.76, 693.63, 111.27)
+Config.defaultSpawnPosition = vector3(-5258.53, -2484.13, -8.67)
 
 -- Default heading for spawned peds
 Config.defaultHeading = 0.0
 
 -- Model of the ped to spawn
-Config.pedModel = "a_c_buffalo_tatanka_01"
+Config.pedModel = 'A_C_Buffalo_Tatanka_01'
 
 -- Delay for the cleanup loop in milliseconds
 Config.cleanupDelay = 5000
